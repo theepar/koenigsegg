@@ -1,0 +1,727 @@
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+* {
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  width: 0;
+}
+/*Reset*/
+html {
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+*,
+* ::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+/*Navigation Bar Head*/
+.header {
+  width: 100%;
+  min-height: 150vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(transparent 40%, black 95%),
+    url(Image/CC850.jpg);
+}
+nav {
+  display: flex;
+  width: 90%;
+  padding-top: 70px;
+  margin-left: 10vh;
+}
+nav a {
+  position: relative;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  margin-right: 5vh;
+}
+nav a:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  bottom: -10px;
+  transition: 1s;
+}
+nav a:hover:after {
+  width: 100%;
+}
+nav img {
+  float: left;
+  margin-right: 130vh;
+  margin-top: -15px;
+}
+.caption {
+  margin-left: 385px;
+  padding-top: 10px;
+}
+/*Animation*/
+.megacars {
+  margin-top: -45vh;
+  width: 100%;
+  min-height: 150vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: animate 10s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(Image/Animation-Home/01.png);
+    background-position: top 100px center;
+  }
+  45% {
+    background-image: url(Image/Animation-Home/02.png);
+    background-position: top 100px center;
+  }
+
+  75% {
+    background-image: url(Image/Animation-Home/03.png);
+    background-position: top 100px center;
+  }
+}
+/*Caption*/
+.technology {
+  background-color: black;
+  width: 100%;
+  min-height: 150vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.technology a {
+  position: relative;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  margin-left: 25vh;
+}
+.technology a:after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  bottom: -10px;
+  transition: 1s;
+}
+.technology a:hover:after {
+  width: 100%;
+}
+.technology h1,
+.technology h2,
+.technology p {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+}
+/*Margin Text*/
+.house {
+  float: right;
+  font-size: 125px;
+  margin-top: 20vh;
+  padding-right: 40vh;
+  margin-bottom: -5vh;
+}
+.inov {
+  float: right;
+  margin-bottom: -19vh;
+  font-size: 125px;
+  padding-right: 45vh;
+}
+.technology h2 {
+  font-size: 20px;
+  width: 10%;
+  margin-left: 35vh;
+  margin-top: 15vh;
+}
+.technology p {
+  font-size: 20px;
+  width: 20%;
+  margin-left: 25vh;
+  margin-top: 35vh;
+}
+.technology img {
+  float: right;
+  margin-top: 25vh;
+  margin-right: 25vh;
+  border: 3px solid white;
+}
+/*Footer*/
+footer {
+  width: 100%;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+footer hr {
+  margin-left: 20vh;
+}
+/*Navigation Bar Footer*/
+.navifoot {
+  margin: 20vh;
+  margin-left: -30vh;
+  float: right;
+  width: 10%;
+}
+.navifoot a {
+  line-height: 65px;
+  display: block;
+  box-sizing: border-box;
+  margin-right: 30vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Noto Sans";
+  color: black;
+  font-size: 20px;
+  transition: 1s;
+}
+.navifoot a:hover {
+  color: grey;
+  padding-left: 20px;
+}
+/*Big Text*/
+.nol {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Noto Sans";
+  padding-top: 10vh;
+  margin-left: 20vh;
+  color: black;
+  font-size: 100px;
+  transition: 1s;
+}
+.none {
+  font-weight: bold;
+  font-family: "Noto Sans";
+  margin-left: 20vh;
+  margin-top: -2vh;
+  color: black;
+  font-size: 100px;
+  transition: 1s;
+}
+.ntwo {
+  font-weight: bold;
+  font-family: "Noto Sans";
+  color: black;
+  margin-top: -8vh;
+  margin-left: 42.3vh;
+  font-size: 100px;
+  transition: 1s;
+}
+.ntri {
+  font-weight: bold;
+  font-family: "Noto Sans";
+  color: black;
+  margin-top: -3vh;
+  margin-left: 19.5vh;
+  font-size: 100px;
+  padding-bottom: 20vh;
+  transition: 1s;
+}
+/*icon*/
+.fa-brands {
+  font-family: "Open Sans";
+  color: black;
+  padding: 20px;
+  font-size: 30px;
+}
+.icon {
+  margin-left: 96vh;
+}
+.icon i {
+  transition: 1s;
+}
+.icon i:hover {
+  color: gray;
+}
+.cr {
+  font-family: "Noto Sans";
+  color: black;
+  padding: 20px;
+  font-size: 15px;
+  margin-left: 81vh;
+}
+/*Mega Cars Home*/
+.megacars-head {
+  width: 100%;
+  min-height: 200vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+}
+/*Megacars Image*/
+figure {
+  overflow: hidden;
+  width: 80%;
+  margin: 0;
+}
+.verti1 {
+  position: relative;
+  float: none;
+  display: inline-block;
+  margin-left: 47vh;
+}
+.verti1 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 90%;
+  right: 50%;
+  text-align: center;
+  transition: 1s;
+}
+.verti1:hover h1 {
+  color: black;
+  margin-top: -10px;
+}
+.verti1 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+  filter: grayscale(100%);
+}
+.verti1:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.verti2 {
+  float: right;
+  margin-top: -63.8vh;
+  margin-right: 8vh;
+}
+.verti2 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 27%;
+  right: 27%;
+  text-align: center;
+  transition: 1s;
+}
+.verti2:hover h1 {
+  color: #ff8e00;
+  margin-top: 10px;
+}
+.verti2 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+  filter: grayscale(100%);
+}
+.verti2:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.verti3 {
+  float: right;
+  margin-right: -83vh;
+  margin-top: 10vh;
+}
+.verti3 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 102%;
+  right: 26%;
+  text-align: center;
+  transition: 1s;
+}
+.verti3:hover h1 {
+  color: #f7fd04;
+  margin-top: 10px;
+}
+.verti3 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+  filter: grayscale(100%);
+}
+.verti3:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+.verti4 {
+  display: inline-block;
+  margin-left: 47vh;
+  margin-top: -5vh;
+}
+.verti4 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 155%;
+  right: 60%;
+  text-align: center;
+  transition: 1s;
+}
+.verti4:hover h1 {
+  color: #ff1e00;
+  margin-top: -10px;
+}
+.verti4 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+  filter: grayscale(100%);
+}
+.verti4:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+/*Technology Home*/
+.techno-head {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(Image/engine/TFG\ -\ magazine.jpg);
+  background-attachment: fixed;
+}
+/*Caption*/
+.engines1,
+.engines2,
+.engines3,
+.engines4,
+.engines5 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.engines1 {
+  float: right;
+  margin-left: 139.8vh;
+  margin-top: 19.5vh;
+}
+.engines2 {
+  margin-left: 115vh;
+  margin-top: 28vh;
+}
+.engines3 {
+  margin-left: 145.9vh;
+  margin-top: 37vh;
+  transform: scale(1, -1);
+}
+.engines4 {
+  margin-left: 140vh;
+  margin-top: 36.3vh;
+}
+.engines5 {
+  margin-left: 153vh;
+  margin-top: 36.3vh;
+}
+/*Background*/
+.information {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+/*Overview*/
+.overview,
+.p2,
+.p1 {
+  font-family: "Open Sans";
+  text-align: center;
+  text-transform: uppercase;
+}
+.overview {
+  margin-top: 15vh;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.1;
+  right: 50%;
+}
+.p1 {
+  margin-top: 5vh;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1.2;
+  padding: 20px;
+  width: 60%;
+  margin-left: 40vh;
+}
+.p2 {
+  margin-top: 5vh;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.2;
+  padding: 20px;
+  width: 60%;
+  margin-left: 40vh;
+  margin-bottom: 50vh;
+}
+.bespoke {
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1;
+  color: black;
+  margin-bottom: 10vh;
+}
+/*Image engine*/
+.verti-engine1 {
+  position: relative;
+  float: right;
+  margin-right: 90vh;
+  margin-bottom: -1.5vh;
+}
+.verti-engine1 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 80%;
+  right: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 1s;
+}
+.verti-engine1:hover h1 {
+  margin-top: -10px;
+}
+.verti-engine1 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+}
+.verti-engine1:hover img {
+  transform: scale(1.1);
+  filter: brightness(90%);
+}
+.verti-engine2 {
+  display: inline-block;
+  position: relative;
+  margin-left: 105vh;
+  margin-top: -90vh;
+}
+.verti-engine2 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 80%;
+  right: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 1s;
+}
+.verti-engine2:hover h1 {
+  margin-top: -10px;
+}
+.verti-engine2 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+}
+.verti-engine2:hover img {
+  filter: brightness(90%);
+  transform: scale(1.1);
+}
+.verti-engine3 {
+  display: inline-block;
+  position: relative;
+  margin-left: 75vh;
+  margin-top: 1vh;
+}
+.verti-engine3 h1 {
+  font-family: "Noto Sans";
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  top: 80%;
+  right: 50%;
+  text-align: center;
+  transition: 1s;
+}
+.verti-engine3:hover h1 {
+  margin-top: -10px;
+}
+.verti-engine3 img {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  transition: 1s;
+  transform: scale(1);
+}
+.verti-engine3:hover img {
+  filter: brightness(90%);
+  transform: scale(1.1);
+}
+.information hr {
+  margin-top: 10vh;
+  margin-left: 110vh;
+}
+/*About Home*/
+.about-head {
+  width: 100%;
+  min-height: 60vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  margin-bottom: 10vh;
+}
+.caption-about h1 {
+  color: white;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  font-size: 80px;
+  margin: 10vh 15vh;
+}
+.caption-about p {
+  float: right;
+  color: white;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  font-weight: 200;
+  width: 30%;
+  font-size: 20px;
+  margin-right: 20vh;
+  margin-top: -20vh;
+  margin-bottom: 10vh;
+}
+.history-about p {
+  color: black;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+}
+.koenig {
+  font-size: 60px;
+  font-weight: 700;
+}
+.auto {
+  font-size: 60px;
+  font-weight: 700;
+}
+.born {
+  font-size: 60px;
+  font-weight: 700;
+}
+/*Contact Home*/
+.contact-head {
+  width: 100%;
+  min-height: 80vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+.caption-contact {
+  color: white;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+}
+.caption-contact h1 {
+  float: none;
+  font-size: 80px;
+  width: 20%;
+  margin-top: 10vh;
+  margin-left: 15vh;
+  margin-bottom: 20vh;
+}
+.caption-contact p {
+  float: right;
+  margin-right: 15vh;
+  margin-top: -35vh;
+  font-size: 30px;
+  width: 30%;
+}
+.contact-info {
+  width: 100%;
+  min-height: 40vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+}
+.contact-info hr {
+  margin-left: -20vh;
+}
+.contact-info h1 {
+  color: black;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  width: 20%;
+  font-size: 40px;
+  margin-top: 15vh;
+  margin-left: 20vh;
+  float: left;
+}
+.email {
+  color: black;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 21vh;
+  margin-right: 38vh;
+  float: right;
+}
+.telp {
+  color: black;
+  font-family: "Noto Sans";
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 18vh;
+  margin-right: -18.5vh;
+  float: right;
+}
+.line {
+  margin-left: 20vh;
+}
+/*end*/
