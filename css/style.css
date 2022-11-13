@@ -38,19 +38,19 @@ a {
     url(Image/CC850.jpg);
 }
 nav {
+  justify-content: space-around;
   display: flex;
-  width: 90%;
+  align-items: center;
   padding-top: 70px;
-  margin-left: 10vh;
 }
 nav a {
+  margin: 20px;
   position: relative;
   font-family: "Noto Sans";
   text-transform: uppercase;
   color: white;
   font-weight: 800;
   letter-spacing: 0.8px;
-  margin-right: 5vh;
 }
 nav a:after {
   content: "";
@@ -91,12 +91,12 @@ nav img {
   }
   45% {
     background-image: url(Image/Animation-Home/02.png);
-    background-position: top 100px center;
+    background-position: top 100px left;
   }
 
   75% {
     background-image: url(Image/Animation-Home/03.png);
-    background-position: top 100px center;
+    background-position: top 100px right;
   }
 }
 /*Caption*/
@@ -607,52 +607,6 @@ figure {
   margin-top: 10vh;
   margin-left: 110vh;
 }
-/*About Home*/
-.about-head {
-  width: 100%;
-  min-height: 60vh;
-  background-position: center top -200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  margin-bottom: 10vh;
-}
-.caption-about h1 {
-  color: white;
-  font-family: "Noto Sans";
-  text-transform: uppercase;
-  font-size: 80px;
-  margin: 10vh 15vh;
-}
-.caption-about p {
-  float: right;
-  color: white;
-  font-family: "Noto Sans";
-  text-transform: uppercase;
-  font-weight: 200;
-  width: 30%;
-  font-size: 20px;
-  margin-right: 20vh;
-  margin-top: -20vh;
-  margin-bottom: 10vh;
-}
-.history-about p {
-  color: black;
-  font-family: "Noto Sans";
-  text-transform: uppercase;
-}
-.koenig {
-  font-size: 60px;
-  font-weight: 700;
-}
-.auto {
-  font-size: 60px;
-  font-weight: 700;
-}
-.born {
-  font-size: 60px;
-  font-weight: 700;
-}
 /*Contact Home*/
 .contact-head {
   width: 100%;
@@ -725,3 +679,184 @@ figure {
   margin-left: 20vh;
 }
 /*end*/
+/*Handphone*/
+@media only screen and (max-width: 767px) {
+  /*Index*/
+  .header {
+    width: 187vh;
+  }
+  nav img {
+    float: left;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+  }
+  nav a {
+    margin-right: -40vh;
+  }
+  .caption img {
+    height: 50px;
+    margin-left: 20vh;
+    margin-top: 45vh;
+  }
+  .megacars {
+    margin-top: -50vh;
+    width: 187vh;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      background-image: url(Image/Animation-Home/01.png);
+      background-position: top 100px left;
+    }
+    45% {
+      background-image: url(Image/Animation-Home/02.png);
+      background-position: top 100px center;
+    }
+
+    75% {
+      background-image: url(Image/Animation-Home/03.png);
+      background-position: top 100px right;
+    }
+  }
+  .technology {
+    margin-top: -10vh;
+    padding-bottom: 10vh;
+    width: 187vh;
+  }
+  .technology h2 {
+    margin-left: 40vh;
+  }
+  .house {
+    margin-right: -2vh;
+  }
+  .inov {
+    margin-right: 8vh;
+  }
+  .technology img {
+    margin-right: 35vh;
+    margin-bottom: 10vh;
+  }
+  .technology p {
+    margin-top: 112vh;
+    width: 100vh;
+    margin-left: 43vh;
+    text-align: center;
+  }
+  footer {
+    width: 187vh;
+  }
+  .icon {
+    margin-left: 85vh;
+  }
+  .ntwo {
+    margin-left: 44.5vh;
+  }
+  .cr {
+    margin-left: 70vh;
+  }
+  /*Megacars*/
+  .megacars-head {
+    width: 187vh;
+  }
+  .verti1 {
+    margin-left: 25vh;
+    margin-top: 5vh;
+    width: 70vh;
+  }
+  .verti1 h1 {
+    margin-top: -1vh;
+    right: 45%;
+  }
+  .verti2 {
+    margin-top: -5vh;
+    margin-right: 20vh;
+    width: 70vh;
+  }
+  .verti2 h1 {
+    margin-top: -3vh;
+    left: 245%;
+  }
+  .verti3 {
+    width: 70vh;
+    margin-right: 20vh;
+    margin-top: 5vh;
+  }
+  .verti3 h1 {
+    left: 245%;
+    margin-top: -1vh;
+  }
+  .verti4 {
+    width: 70vh;
+    margin-top: 15vh;
+    margin-left: 25vh;
+  }
+  .verti4 h1 {
+    left: 95%;
+    margin-top: 3vh;
+  }
+  /*Technology*/
+  .techno-head {
+    width: 187vh;
+    background-position: center;
+  }
+  .caption-engine {
+    margin-left: -30vh;
+  }
+  .engines1 {
+    margin-top: 12vh;
+    margin-left: 142vh;
+    font-size: 70px;
+  }
+  .engines2 {
+    font-size: 70px;
+    margin-top: 20vh;
+    margin-left: 120vh;
+  }
+  .engines3 {
+    margin-top: 28.5vh;
+    margin-left: 147vh;
+    font-size: 70px;
+  }
+  .engines4 {
+    margin-top: 28vh;
+    margin-left: 142vh;
+    font-size: 70px;
+  }
+  .engines5 {
+    margin-top: 28vh;
+    margin-left: 153vh;
+    font-size: 70px;
+  }
+  .information {
+    width: 187vh;
+  }
+  .overview {
+    margin-left: 10vh;
+  }
+  .bespoke {
+    margin-left: 10vh;
+  }
+  .verti-engine1 {
+    margin-right: 80vh;
+    width: 600px;
+  }
+  .verti-engine2 {
+    width: 600px;
+    margin-left: 100vh;
+  }
+  .verti-engine3 {
+    width: 600px;
+    margin-left: 70vh;
+  }
+  /*Contact*/
+  .contact-head {
+    width: 187vh;
+  }
+  .caption-contact p {
+    font-size: 20px;
+    margin-top: -15vh;
+  }
+  .contact-info p {
+    margin-left: -5vh;
+  }
+}
