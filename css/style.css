@@ -27,21 +27,12 @@ a {
   margin: 0;
   padding: 0;
 }
-/*Navigation Bar Head*/
-.header {
-  width: 100%;
-  min-height: 150vh;
-  background-position: center top -200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(transparent 40%, black 95%),
-    url(Image/CC850.jpg);
-}
 nav {
   justify-content: space-around;
   display: flex;
   align-items: center;
   padding-top: 70px;
+  animation: nav-anim 1s ease-in-out 1;
 }
 nav a {
   margin: 20px;
@@ -51,6 +42,12 @@ nav a {
   color: white;
   font-weight: 800;
   letter-spacing: 0.8px;
+}
+@keyframes nav-anim {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
 }
 nav a:after {
   content: "";
@@ -73,6 +70,13 @@ nav img {
 .caption {
   margin-left: 385px;
   padding-top: 10px;
+  animation: nav-capt 1s ease-in-out 1;
+}
+@keyframes nav-capt {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
 }
 /*Animation*/
 .megacars {
@@ -87,11 +91,11 @@ nav img {
   0%,
   100% {
     background-image: url(Image/Animation-Home/01.png);
-    background-position: top 100px center;
+    background-position: top 100px right;
   }
   45% {
     background-image: url(Image/Animation-Home/02.png);
-    background-position: top 100px left;
+    background-position: top 100px center;
   }
 
   75% {
@@ -179,6 +183,103 @@ footer {
 footer hr {
   margin-left: 20vh;
 }
+/*Animaion ScrollBar*/
+/*UP Version*/
+.animscrollup1 {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.animscrollup1.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.animscrollup2 {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.1s all ease-in-out;
+}
+.animscrollup2.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.animscrollup3 {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.2s all ease-in-out;
+}
+.animscrollup3.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.animscrollup4 {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.3s all ease-in-out;
+}
+.animscrollup4.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/*Right Version*/
+.animscrollright {
+  opacity: 0;
+  transition: 1.2s all ease-in-out;
+}
+.animscrollright.active {
+  opacity: 1;
+}
+.active.fade-right {
+  animation: fade-left 1s ease-in-out;
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*Left Version*/
+.animscrollleft {
+  opacity: 0;
+  transition: 1.2s all ease-in-out;
+}
+.animscrollleft.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in-out;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*Navigation Bar Head*/
+.header {
+  width: 100%;
+  min-height: 150vh;
+  background-position: center top -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(transparent 40%, black 95%),
+    url(Image/CC850.jpg);
+  animation: zoom-out 0.5s ease-in-out 1;
+}
+@keyframes zoom-out {
+  0% {
+    opacity: 0%;
+    transform: scale(1.3);
+  }
+}
 /*Navigation Bar Footer*/
 .navifoot {
   margin: 20vh;
@@ -209,6 +310,7 @@ footer hr {
   font-family: "Noto Sans";
   padding-top: 10vh;
   margin-left: 20vh;
+  width: 50%;
   color: black;
   font-size: 100px;
   transition: 1s;
@@ -218,6 +320,7 @@ footer hr {
   font-family: "Noto Sans";
   margin-left: 20vh;
   margin-top: -2vh;
+  width: 50%;
   color: black;
   font-size: 100px;
   transition: 1s;
@@ -225,6 +328,7 @@ footer hr {
 .ntwo {
   font-weight: bold;
   font-family: "Noto Sans";
+  width: 50%;
   color: black;
   margin-top: -8vh;
   margin-left: 42.3vh;
@@ -234,6 +338,7 @@ footer hr {
 .ntri {
   font-weight: bold;
   font-family: "Noto Sans";
+  width: 50%;
   color: black;
   margin-top: -3vh;
   margin-left: 19.5vh;
@@ -273,6 +378,12 @@ footer hr {
   background-size: cover;
   background-color: black;
   background-attachment: fixed;
+  animation: cars-anim 0.5s ease-in-out 1;
+}
+@keyframes cars-anim {
+  0% {
+    opacity: 0%;
+  }
 }
 /*Megacars Image*/
 figure {
@@ -286,6 +397,15 @@ figure {
   display: inline-block;
   margin-left: 47vh;
 }
+@keyframes verti1-anim {
+  0% {
+    opacity: 0%;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .verti1 h1 {
   font-family: "Noto Sans";
   color: white;
@@ -295,6 +415,7 @@ figure {
   right: 50%;
   text-align: center;
   transition: 1s;
+  animation: verti1-anim 1s ease-in-out 1;
 }
 .verti1:hover h1 {
   color: black;
@@ -308,6 +429,7 @@ figure {
   transition: 1s;
   transform: scale(1);
   filter: grayscale(100%);
+  animation: verti1-anim 1s ease-in-out 1;
 }
 .verti1:hover img {
   transform: scale(1.1);
@@ -318,6 +440,15 @@ figure {
   margin-top: -63.8vh;
   margin-right: 8vh;
 }
+@keyframes verti2-anim {
+  0% {
+    opacity: 0%;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .verti2 h1 {
   font-family: "Noto Sans";
   color: white;
@@ -327,6 +458,7 @@ figure {
   right: 27%;
   text-align: center;
   transition: 1s;
+  animation: verti2-anim 1s ease-in-out 1;
 }
 .verti2:hover h1 {
   color: #ff8e00;
@@ -340,6 +472,7 @@ figure {
   transition: 1s;
   transform: scale(1);
   filter: grayscale(100%);
+  animation: verti2-anim 1s ease-in-out 1;
 }
 .verti2:hover img {
   transform: scale(1.1);
@@ -350,6 +483,15 @@ figure {
   margin-right: -83vh;
   margin-top: 10vh;
 }
+@keyframes verti3-anim {
+  0% {
+    opacity: 0%;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .verti3 h1 {
   font-family: "Noto Sans";
   color: white;
@@ -359,6 +501,7 @@ figure {
   right: 26%;
   text-align: center;
   transition: 1s;
+  animation: verti3-anim 1s ease-in-out 1;
 }
 .verti3:hover h1 {
   color: #f7fd04;
@@ -372,6 +515,7 @@ figure {
   transition: 1s;
   transform: scale(1);
   filter: grayscale(100%);
+  animation: verti3-anim 1s ease-in-out 1;
 }
 .verti3:hover img {
   transform: scale(1.1);
@@ -382,6 +526,15 @@ figure {
   margin-left: 47vh;
   margin-top: -5vh;
 }
+@keyframes verti4-anim {
+  0% {
+    opacity: 0%;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .verti4 h1 {
   font-family: "Noto Sans";
   color: white;
@@ -391,6 +544,7 @@ figure {
   right: 60%;
   text-align: center;
   transition: 1s;
+  animation: verti4-anim 1s ease-in-out 1;
 }
 .verti4:hover h1 {
   color: #ff1e00;
@@ -404,6 +558,7 @@ figure {
   transition: 1s;
   transform: scale(1);
   filter: grayscale(100%);
+  animation: verti4-anim 1s ease-in-out 1;
 }
 .verti4:hover img {
   transform: scale(1.1);
@@ -418,6 +573,12 @@ figure {
   background-size: cover;
   background-image: url(Image/engine/TFG\ -\ magazine.jpg);
   background-attachment: fixed;
+  animation: tech-anim 0.5s ease-in-out 1;
+}
+@keyframes tech-anim {
+  0% {
+    opacity: 0%;
+  }
 }
 /*Caption*/
 .engines1,
@@ -436,24 +597,48 @@ figure {
   float: right;
   margin-left: 139.8vh;
   margin-top: 19.5vh;
+  animation: engine1-anim 0.7s ease-in-out 1;
 }
 .engines2 {
   margin-left: 115vh;
   margin-top: 28vh;
+  animation: engine2-anim 0.9s ease-in-out 1;
 }
 .engines3 {
   margin-left: 145.9vh;
   margin-top: 37vh;
   transform: scale(1, -1);
+  animation: engine3-anim 1s ease-in-out 1;
 }
 .engines4 {
   margin-left: 140vh;
   margin-top: 36.3vh;
+  animation: engine3-anim 1s ease-in-out 1;
 }
 .engines5 {
   margin-left: 153vh;
   margin-top: 36.3vh;
+  animation: engine3-anim 1s ease-in-out 1;
 }
+@keyframes engine1-anim {
+  0% {
+    opacity: 0%;
+    transform: translateY(150px);
+  }
+}
+@keyframes engine2-anim {
+  0% {
+    opacity: 0%;
+    transform: translateY(150px);
+  }
+}
+@keyframes engine3-anim {
+  0% {
+    opacity: 0%;
+    transform: translateY(150px);
+  }
+}
+
 /*Background*/
 .information {
   width: 100%;
@@ -628,6 +813,7 @@ figure {
   margin-top: 10vh;
   margin-left: 15vh;
   margin-bottom: 20vh;
+  animation: contact-anim 1s ease-in-out 1;
 }
 .caption-contact p {
   float: right;
@@ -635,6 +821,13 @@ figure {
   margin-top: -35vh;
   font-size: 30px;
   width: 30%;
+  animation: contact-anim 1.2s ease-in-out 1;
+}
+@keyframes contact-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
 }
 .contact-info {
   width: 100%;
@@ -656,6 +849,7 @@ figure {
   margin-top: 15vh;
   margin-left: 20vh;
   float: left;
+  animation: contact-anim 1s ease-in-out 1;
 }
 .email {
   color: black;
@@ -665,6 +859,7 @@ figure {
   margin-top: 21vh;
   margin-right: 38vh;
   float: right;
+  animation: emaitep-anim 1.3s ease-in-out 1;
 }
 .telp {
   color: black;
@@ -674,6 +869,13 @@ figure {
   margin-top: 18vh;
   margin-right: -18.5vh;
   float: right;
+  animation: emaitep-anim 1s ease-in-out 1;
+}
+@keyframes emaitep-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
 }
 .line {
   margin-left: 20vh;
@@ -860,3 +1062,4 @@ figure {
     margin-left: -5vh;
   }
 }
+/*Tablet*/
