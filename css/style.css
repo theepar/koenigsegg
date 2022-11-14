@@ -929,13 +929,14 @@ figure {
     margin-left: 40vh;
   }
   .house {
-    margin-right: -2vh;
+    margin-right: 2vh;
   }
   .inov {
-    margin-right: 8vh;
+    margin-right: 15vh;
   }
   .technology img {
-    margin-right: 35vh;
+    float: left;
+    margin-left: 45vh;
     margin-bottom: 10vh;
   }
   .technology p {
