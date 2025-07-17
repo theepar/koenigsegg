@@ -1,104 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="css/Logo/icon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <title>Home | Koenigsegg Automotive AB</title>
-  </head>
-  <body>
-    <section class="header">
-      <!--Navbar-->
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">
-              <img
-                src="css/Logo/Koenigsegg.png"
-                height="95px"
-                width="150px"
-                alt="Logo"
-              />
-            </a>
-            <a href="megacars.html">Megacars</a>
-            <a href="techno.html">Technology</a>
-          </li>
-        </ul>
-      </nav>
-      <!--Caption-->
-      <div class="caption">
-        <img
-          src="css/Logo/CC850_w_logo.svg"
-          height="450px"
-          width="450px"
-          alt="cc850"
-        />
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg Automotive AB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">KOENIGSEGG</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#megacars" class="nav-link">Megacars</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <img src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Luxury Sports Car" class="hero-image">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">ULTIMATE</span>
+                    <span class="title-line">PERFORMANCE</span>
+                </h1>
+                <p class="hero-subtitle">Redefining automotive excellence since 1994</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Explore Models</button>
+                    <button class="btn btn-secondary">Watch Story</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
-    <!--Megacars-->
-    <div class="megacars"></div>
-    <!--Technology-->
-    <div class="technology">
-      <a href="megacars.html">Explore past and present models →</a>
-      <h1 class="house animscrollup1">in-house</h1>
-      <h1 class="inov animscrollup2">inovations</h1>
-      <h2>technological achivements</h2>
-      <img
-        src="css/Image/Mesin.png"
-        class="animscrollup4"
-        height="550px"
-        width="850px"
-        alt="01"
-      />
-      <p class="animscrollright fade-right">
-        Staying ahead of the curve in a very competitive e-mobility landscape in
-        true Koenigsegg fashion, we are offering our ground-breaking components
-        to visionary clientele. Sharing this technology enables Koenigsegg to
-        have a positive impact on CO2 reduction.
-      </p>
-    </div>
-    <!--Footer-->
-    <footer>
-      <div class="navifoot">
-        <ul>
-          <li>
-            <a href="megacars.html">Megacars</a>
-            <a href="techno.html">Technology</a>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="text">
-        <p class="nol animscrollup1">Koenigsegg</p>
-        <p class="none animscrollup2">SHOW</p>
-        <p class="ntwo animscrollup3">MUST</p>
-        <p class="ntri animscrollup4">GO ON</p>
-      </div>
-      <hr width="80%" />
-      <div class="icon">
-        <a href="https://www.instagram.com/sythepar/"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a href="https://github.com/theepar"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-      </div>
-      <div class="cr">
-        <p>Copyright © since 1994 – Koenigsegg Automotive AB</p>
-      </div>
+
+    <!-- Megacars Section -->
+    <section id="megacars" class="megacars">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MEGACARS</h2>
+                <p class="section-subtitle">Engineering perfection in every detail</p>
+            </div>
+            <div class="cars-grid">
+                <div class="car-card" data-car="jesko">
+                    <div class="car-image">
+                        <img src="https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Jesko Absolut">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>JESKO ABSOLUT</h3>
+                                <p>Maximum velocity machine</p>
+                                <div class="car-specs">
+                                    <span>1,600 HP</span>
+                                    <span>330+ MPH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" data-car="gemera">
+                    <div class="car-image">
+                        <img src="https://images.pexels.com/photos/3802503/pexels-photo-3802503.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Gemera">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>GEMERA</h3>
+                                <p>Grand touring hybrid</p>
+                                <div class="car-specs">
+                                    <span>1,700 HP</span>
+                                    <span>4 Seats</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" data-car="cc850">
+                    <div class="car-image">
+                        <img src="https://images.pexels.com/photos/3802504/pexels-photo-3802504.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="CC850">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>CC850</h3>
+                                <p>Revolutionary transmission</p>
+                                <div class="car-specs">
+                                    <span>1,385 HP</span>
+                                    <span>9-Speed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card" data-car="regera">
+                    <div class="car-image">
+                        <img src="https://images.pexels.com/photos/3802505/pexels-photo-3802505.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Regera">
+                        <div class="car-overlay">
+                            <div class="car-info">
+                                <h3>REGERA</h3>
+                                <p>Direct drive hybrid</p>
+                                <div class="car-specs">
+                                    <span>1,500 HP</span>
+                                    <span>Direct Drive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h2 class="section-title">TECHNOLOGY</h2>
+                    <h3 class="tech-subtitle">In-House Innovation</h3>
+                    <p class="tech-description">
+                        Koenigsegg develops and manufactures most components in-house, 
+                        giving us complete control over quality and performance. Our 
+                        revolutionary technologies push the boundaries of what's possible 
+                        in automotive engineering.
+                    </p>
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Advanced Materials</h4>
+                                <p>Carbon fiber and lightweight composites</p>
+                            </div>
+                        </div>
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Hybrid Powertrains</h4>
+                                <p>Cutting-edge electric motor integration</p>
+                            </div>
+                        </div>
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Smart Systems</h4>
+                                <p>AI-powered performance optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-visual">
+                    <div class="tech-image">
+                        <img src="https://images.pexels.com/photos/159293/car-engine-motor-clean-159293.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Engine Technology">
+                        <div class="tech-overlay">
+                            <div class="tech-stats">
+                                <div class="stat">
+                                    <span class="stat-number">1600</span>
+                                    <span class="stat-label">HP</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">330+</span>
+                                    <span class="stat-label">MPH</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">2.5</span>
+                                    <span class="stat-label">0-60s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">GET IN TOUCH</h2>
+                    <p class="contact-subtitle">Ready to experience automotive excellence?</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Visit Us</h4>
+                                <p>Ängelholm, Sweden</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <p>+46 431 45 44 60</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <p>info@koenigsegg.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-input" required>
+                                <option value="">Select Interest</option>
+                                <option value="purchase">Vehicle Purchase</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="media">Media Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">KOENIGSEGG</h3>
+                    <p class="footer-tagline">The show must go on</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Models</h4>
+                        <a href="#">Jesko Absolut</a>
+                        <a href="#">Gemera</a>
+                        <a href="#">CC850</a>
+                        <a href="#">Regera</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Technology</a>
+                        <a href="#">Careers</a>
+                        <a href="#">News</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#">Contact</a>
+                        <a href="#">Service</a>
+                        <a href="#">Parts</a>
+                        <a href="#">Warranty</a>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Koenigsegg Automotive AB. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-    <script src="scrollanim.js"></script>
-  </body>
+
+    <script src="scripts/main.js"></script>
+</body>
 </html>
