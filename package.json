@@ -1,0 +1,16 @@
+{
+  "name": "koenigsegg-website",
+  "version": "1.0.0",
+  "description": "Koenigsegg-inspired dark mode website with royal blue theme",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Build completed - static files ready'",
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": ["koenigsegg", "automotive", "luxury", "dark-mode", "royal-blue"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
