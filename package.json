@@ -4,8 +4,8 @@
   "description": "Koenigsegg-inspired dark mode website with royal blue theme",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Build completed - static files ready'",
-    "start": "python3 -m http.server 3000",
+    "start": "node server.js",
+    "dev": "node server.js",
     "dev": "python3 -m http.server 3000"
   },
   "keywords": ["koenigsegg", "automotive", "luxury", "dark-mode", "royal-blue"],
